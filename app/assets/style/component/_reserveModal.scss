@@ -1,0 +1,15 @@
+.modal-dialog{
+  max-width: 920px;
+}
+.reserve-img{
+  width: 282px;
+  height: 282px;
+  @include pad(){
+    width: 150px;
+    height: 150px;
+  }
+  @include mobile(){
+    width: 100px;
+    height: 100px;
+  }
+}
