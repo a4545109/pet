@@ -1,0 +1,22 @@
+.timeLine{
+  height: 2px;
+  left: 0;
+  right: 0;
+  background-color: #000;
+}
+/* 時間軸上的圓點 */
+.timePoint{
+  position: relative;
+}
+/* 時間軸上的圓點偽元素 */
+.timePoint::after{
+  position: absolute;
+  content:"";
+  width: 8px;
+  height: 8px;
+  background-color: #000;
+  left:50%;
+  transform:translatey(-3.5px);
+  border-radius:50%;
+  z-index:1;
+}

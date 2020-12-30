@@ -13,3 +13,12 @@
     height: 100px;
   }
 }
+.successModalBtn{
+  width: 350px;
+  @include pad{
+    width: 330px;
+  }
+  @include mobile(){
+    width: 294px;
+  }
+}
