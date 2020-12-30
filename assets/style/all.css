@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*!
  * Bootstrap v4.5.3 (https://getbootstrap.com/)
  * Copyright 2011-2020 The Bootstrap Authors
@@ -8388,6 +8389,39 @@ body {
     .reserve-img {
       width: 100px;
       height: 100px; } }
+
+.successModalBtn {
+  width: 350px; }
+  @media screen and (max-width: 992px) {
+    .successModalBtn {
+      width: 330px; } }
+  @media screen and (max-width: 768px) {
+    .successModalBtn {
+      width: 294px; } }
+
+.timeLine {
+  height: 2px;
+  left: 0;
+  right: 0;
+  background-color: #000; }
+
+/* 時間軸上的圓點 */
+.timePoint {
+  position: relative; }
+
+/* 時間軸上的圓點偽元素 */
+.timePoint::after {
+  position: absolute;
+  content: "";
+  width: 8px;
+  height: 8px;
+  background-color: #000;
+  left: 50%;
+  -webkit-transform: translatey(-3.5px);
+      -ms-transform: translatey(-3.5px);
+          transform: translatey(-3.5px);
+  border-radius: 50%;
+  z-index: 1; }
 
 @media screen and (max-width: 992px) {
   .searchImg {
