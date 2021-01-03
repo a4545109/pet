@@ -15,122 +15,131 @@
 <body>
   <!-- navbar -->
   <div class="container">
-    <nav class="navbar navbar-expand-md navbar-light justify-content-between">
+    <nav class="navbar navbar-expand-md navbar-light">
       <h1><a class="logo d-md-block d-none" href="index.html">PETPET</a></h1>
-      <a class="logo d-block d-md-none" href="index.html">PETPET</a>
-      <div>
-        <div class="d-flex">
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-        </div>
-        <div class="collapse navbar-collapse fs-5" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item mr-4 active">
-              <a class="nav-link" href="#">預約服務</a>
-            </li>
-            <li class="nav-item mr-4">
-              <a class="nav-link" href="#">成為寵物保姆</a>
-            </li>
-            <li class="nav-item mr-4">
-              <a class="nav-link" href="login.html">登入</a>
-            </li>
-          </ul>
-        </div>
+      <div><a class="logo d-block d-md-none" href="index.html">PETPET</a></div>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse flex-row-reverse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item mr-10 active">
+            <a class="nav-link" href="#">預約服務</a>
+          </li>
+          <li class="nav-item mr-10">
+            <a class="nav-link" href="#">成為寵物保姆</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="login.html">登入</a>
+          </li>
+        </ul>
       </div>
-    </nav>
   </div>
 
   <!-- search -->
 <div class="d-flex align-items-center flex-column flex-lg-row">
-  <img class="searchImg" src="./assets/images/index-1.png" alt="">
-  <div class="searchContent w-100">
-    <div class="searchText">
-      <h2>寵物服務，盡在 PETPET</h2>
-      <p class="d-none d-lg-block">當您的毛孩有需要時，幫您找到最合適的服務者！</p>
-      <p class="d-block d-lg-none">當您的毛孩有需要時，<br>幫您找到最合適的服務者！</p>
-    </div>
-    <div class="d-flex flex-column flex-lg-row">
-      <select class="custom-select" id="Variety">
-        <option value="">品種</option>
-        <option value="狗">狗</option>
-        <option value="貓">貓</option>
-      </select>
-      <select class="custom-select" id="Variety">
-        <option value="">服務</option>
-      </select>
-      <select class="custom-select" id="Variety">
-        <option value="">地區</option>
-      </select>
-      <button type="button" class="text-nowrap">搜尋</button>
+  <img class="searchImg of-cover mb-3 mb-md-6 mb-lg-15" src="./assets/images/index-1.png" alt="">
+  <div class="container">
+    <div class="searchContent w-100">
+      <div class="searchText text-primary">
+        <h2 class="fs-3xl lh-15 fs-lg-2xl lh-lg-12 fs-md-7 lh-md-10 mb-1 mb-md-2 mb-lg-4">寵物服務，盡在 PETPET</h2>
+        <p class="fs-xl lh-9 d-none d-lg-block mb-11">當您的毛孩有需要時，幫您找到最合適的服務者！</p>
+        <p class="fs-l lh-7 d-block d-lg-none mb-3 mb-md-5">當您的毛孩有需要時，<br>幫您找到最合適的服務者！</p>
+      </div>
+      <div class="d-flex flex-column flex-lg-row">
+        <select class="custom-select fs-l lh-7 mb-4 mb-md-3 mb-lg-0" id="Variety">
+          <option value="品種">品種</option>
+          <option value="狗">狗</option>
+          <option value="貓">貓</option>
+        </select>
+        <select class="custom-select fs-l lh-7 mb-4 mb-md-3 mb-lg-0" id="Variety">
+          <option value="服務">服務</option>
+        </select>
+        <select class="custom-select fs-l lh-7 mb-3 mb-md-4 mb-lg-0" id="Variety">
+          <option value="地區">地區</option>
+        </select>
+        <button type="button" class="btn btn-secondary fs-l lh-7 text-nowrap border-left-0">搜尋</button>
+      </div>
     </div>
   </div>
 </div>
 
 <!-- hot -->
-<div class="container">
-  <h2>本月熱門保姆</h2>
-  <p>即時瞭解您的需求，安排最適合毛孩的寵物保姆！</p>
+<div class="container text-primary mb-7 mb-md-11 mb-lg-14">
+  <h2 class="fs-4xl lh-12 mb-1">本月熱門保姆</h2>
+  <p class="fs-l lh-9 lh-md-7 mb-3">即時瞭解您的需求，安排最適合毛孩的寵物保姆！</p>
   <ul class="row">
     <li class="col-12 col-md-4">
-      <div class="hotItem">
-        <div class="hotImg bg-cover" style="background-image: url('../../assets/images/index-2.jpeg');"></div>
+      <div class="hot-item mb-3">
+        <div class="hot-img bg-cover" style="background-image: url('./assets/images/index-2.jpeg');"></div>
         <div class="d-flex flex-column align-items-center">
-          <img class="hotPeople" src="./assets/images/person-1.png" alt="">
-          <h2>Jamie</h2>
-          <p>寄宿、美容、寵物行為訓練</p>
-          <button type="button"><a href="reserve.html">預約</a></button>
+          <img class="hot-people" src="./assets/images/person-1.png" alt="">
+          <h2 class="fs-l lh-7 mb-1">Jamie</h2>
+          <p class="mb-3">寄宿、美容、寵物行為訓練</p>
+          <button type="button" class="btn btn-secondary mb-6">
+            <a href="reserve.html" class="d-block lh-6 text-white">預約</a>
+          </button>
           <div class="row">
             <div class="col-6">
-              <h3>獲得評價</h3>
-              <h4><span>198</span>則</h4>
+              <h3 class="fs-m lh-6 mb-3">獲得評價</h3>
+              <h4 class="d-flex align-items-center"><span class="hot-num lh-10 mr-1">198</span><span
+                  class="fs-s lh-5">則</span></h4>
             </div>
             <div class="col-6">
-              <h3>已完成訂單</h3>
-              <h4><span>580</span>件</h4>
+              <h3 class="fs-m lh-6 text-nowrap mb-3">已完成訂單</h3>
+              <h4 class="d-flex align-items-center mb-7"><span class="hot-num lh-10 mr-1">580</span><span
+                  class="fs-s lh-5">件</span></h4>
             </div>
           </div>
         </div>
       </div>
     </li>
     <li class="col-12 col-md-4">
-      <div class="hotItem">
-        <div class="hotImg bg-cover" style="background-image: url('../../assets/images/index-3.jpeg');"></div>
+      <div class="hot-item mb-3">
+        <div class="hot-img bg-cover" style="background-image: url('./assets/images/index-3.jpeg');"></div>
         <div class="d-flex flex-column align-items-center">
-          <img class="hotPeople" src="./assets/images/person-2.png" alt="">
-          <h2>Eric</h2>
-          <p>寄宿、美容</p>
-          <button type="button"><a href="reserve.html">預約</a></button>
+          <img class="hot-people" src="./assets/images/person-2.png" alt="">
+          <h2 class="fs-l lh-7 mb-1">Eric</h2>
+          <p class="mb-3">寄宿、美容</p>
+          <button type="button" class="btn btn-secondary mb-6">
+            <a href="reserve.html" class="d-block lh-6 text-white">預約</a>
+          </button>
           <div class="row">
             <div class="col-6">
-              <h3>獲得評價</h3>
-              <h4><span>76</span>則</h4>
+              <h3 class="fs-m lh-6 mb-3">獲得評價</h3>
+              <h4 class="d-flex align-items-center"><span class="hot-num lh-10 mr-1">76</span><span
+                  class="fs-s lh-5">則</span></h4>
             </div>
             <div class="col-6">
-              <h3>已完成訂單</h3>
-              <h4><span>208</span>件</h4>
+              <h3 class="fs-m lh-6 text-nowrap mb-3">已完成訂單</h3>
+              <h4 class="d-flex align-items-center mb-7"><span class="hot-num lh-10 mr-1">208</span><span
+                  class="fs-s lh-5">件</span></h4>
             </div>
           </div>
         </div>
       </div>
     </li>
     <li class="col-12 col-md-4">
-      <div class="hotItem">
-        <div class="hotImg bg-cover" style="background-image: url('../../assets/images/index-4.jpeg');"></div>
+      <div class="hot-item mb-3">
+        <div class="hot-img bg-cover" style="background-image: url('./assets/images/index-4.jpeg');"></div>
         <div class="d-flex flex-column align-items-center">
-          <img class="hotPeople" src="./assets/images/person-3.png" alt="">
-          <h2>Yvonne</h2>
-          <p>美容、寵物行為訓練</p>
-          <button type="button"><a href="reserve.html">預約</a></button>
+          <img class="hot-people" src="./assets/images/person-3.png" alt="">
+          <h2 class="fs-l lh-7 mb-1">Yvonne</h2>
+          <p class="mb-3">美容、寵物行為訓練</p>
+          <button type="button" class="btn btn-secondary mb-6">
+            <a href="reserve.html" class="d-block lh-6 text-white">預約</a>
+          </button>
           <div class="row">
             <div class="col-6">
-              <h3>獲得評價</h3>
-              <h4><span>52</span>則</h4>
+              <h3 class="fs-m lh-6 mb-3">獲得評價</h3>
+              <h4 class="d-flex align-items-center"><span class="hot-num lh-10 mr-1">52</span><span
+                  class="fs-s lh-5">則</span></h4>
             </div>
             <div class="col-6">
-              <h3>已完成訂單</h3>
-              <h4><span>196</span>件</h4>
+              <h3 class="fs-m lh-6 text-nowrap mb-3">已完成訂單</h3>
+              <h4 class="d-flex align-items-center mb-7"><span class="hot-num lh-10 mr-1">196</span><span
+                  class="fs-s lh-5">件</span></h4>
             </div>
           </div>
         </div>
@@ -140,65 +149,68 @@
 </div>
 
 <!-- demand -->
-<div class="container">
-  <h2>線上預約</h2>
-  <p>即時瞭解您的需求，安排最適合毛孩的寵物保姆！</p>
+<div class="demand container text-primary">
+  <h2 class="fs-4xl lh-12 mb-1">線上預約</h2>
+  <p class="fs-l lh-9 lh-md-7 mb-3">即時瞭解您的需求，安排最適合毛孩的寵物保姆！</p>
   <div class="row">
-    <div class="col-12 col-md-4">
+    <div class="col-12 col-md-4 mb-1">
       <div class="demandItem d-flex justify-content-center align-items-center bg-cover"
         style="background-image: url('./assets/images/index-5.jpeg');">
-        <a href="board.html" class="text-white">寵物寄宿</a>
+        <a href="board.html" class="text-white fs-xl lh-9">寵物寄宿</a>
+      </div>
+    </div>
+    <div class="col-12 col-md-3 mb-1">
+      <div class="demandItem d-flex justify-content-center align-items-center bg-cover"
+        style="background-image: url('./assets/images/index-6.jpeg');">
+        <a href="#" class="text-white fs-xl lh-9">寵物美容</a>
       </div>
     </div>
     <div class="col-12 col-md-3">
-      <div class="demandItem d-flex justify-content-center align-items-center bg-cover"
-        style="background-image: url('./assets/images/index-6.jpeg');">
-        <a href="#" class="text-white">寵物美容</a>
-      </div>
-    </div>
-    <div class="col-12 col-md-3" style="height: 350px;">
-      <div class="row d-flex flex-column h-100">
-        <div class="h-50 d-flex justify-content-center align-items-center bg-cover"
-          style="background-image: url('./assets/images/index-7.jpeg');">
-          <a href="#" class="text-white">到府照顧</a>
+      <div class="row">
+        <div class="col-12 h-50">
+          <div class="demandItemItem d-flex justify-content-center align-items-center bg-cover"
+            style="background-image: url('./assets/images/index-7.jpeg');">
+            <a href="#" class="text-white fs-xl lh-9">到府照顧</a>
+          </div>
         </div>
-        <div class="h-50 d-flex justify-content-center align-items-center bg-cover"
-          style="background-image: url('./assets/images/index-8.jpeg');">
-          <a href="#" class="text-white">遛狗保姆</a>
+        <div class="col-12 h-50">
+          <div class="demandItemItem d-flex justify-content-center align-items-center bg-cover"
+            style="background-image: url('./assets/images/index-8.jpeg');">
+            <a href="#" class="text-white fs-xl lh-9">遛狗保姆</a>
+          </div>
         </div>
       </div>
     </div>
-    <div class="col-12 col-md-2">
+    <div class="col-12 col-md-2 mb-10 mb-md-13 mb-lg-15">
       <div class="demandItem d-flex justify-content-center align-items-center bg-cover"
         style="background-image: url('./assets/images/index-3.jpeg');">
-        <a href="#" class="text-white">行為訓練</a>
+        <a href="#" class="text-white fs-xl lh-9">行為訓練</a>
       </div>
     </div>
-
   </div>
 </div>
 
 <!-- wall -->
-<div class="wall bg-cover text-white">
+<div class="wall bg-cover text-white mb-10 mb-md-13 mb-lg-15">
   <div class="container">
-    <h2>PETPET目前已有</h2>
+    <h2 class="wallTitle fs-3xl lh-15 pt-13 pt-md-15">PETPET目前已有</h2>
     <ul class="row">
       <li class="col-12 col-md-4 col-lg-3">
-        <div class="wallItem">
-          <h3>5278</h3>
-          <p>人使用 PETPET</p>
+        <div class="wallItem pl-4 mb-15">
+          <h3 class="fs-4xl lh-18">5278</h3>
+          <p class="fs-l lh-7">人使用 PETPET</p>
         </div>
       </li>
       <li class="col-12 col-md-4 col-lg-3">
-        <div class="wallItem">
-          <h3>580</h3>
-          <p>人成為寵物保母</p>
+        <div class="wallItem pl-4 mb-15">
+          <h3 class="fs-4xl lh-18">580</h3>
+          <p class="fs-l lh-7">人成為寵物保母</p>
         </div>
       </li>
       <li class="col-12 col-md-4 col-lg-3">
-        <div class="wallItem">
-          <h3>10000+</h3>
-          <p>已完成服務</p>
+        <div class="wallItem pl-4 mb-15">
+          <h3 class="fs-4xl lh-18">10000+</h3>
+          <p class="fs-l lh-7">已完成服務</p>
         </div>
       </li>
     </ul>
@@ -206,69 +218,85 @@
 </div>
 
 <!-- info -->
-<div class="container">
-  <h2>預約流程</h2>
-  <p>輕鬆三步驟，立即獲取最佳服務！</p>
+<div class="container text-primary">
+  <h2 class="fs-4xl lh-12 mb-1">預約流程</h2>
+  <p class="fs-l lh-9 lh-md-7 mb-3 mb-md-5">輕鬆三步驟，立即獲取最佳服務！</p>
   <div class="row">
-    <div class="col-12 col-md-4">
-      <h3>1.查詢想要的服務</h3>
+    <div class="col-12 col-md-4 mb-8">
+      <h3 class="fs-l lh-9 mb-1">1.查詢想要的服務</h3>
       <img class="infoImg of-cover w-100" src="./assets/images/index-10.png" alt="">
     </div>
-    <div class="col-12 col-md-4">
-      <h3>2.找到合適的保姆</h3>
+    <div class="col-12 col-md-4 mb-8">
+      <h3 class="fs-l lh-9 mb-1">2.找到合適的保姆</h3>
       <img class="infoImg of-cover w-100" src="./assets/images/index-11.png" alt="">
     </div>
-    <div class="col-12 col-md-4">
-      <h3>3.填寫資料完成預約</h3>
+    <div class="col-12 col-md-4 mb-13 mb-lg-15">
+      <h3 class="fs-l lh-9 mb-1">3.填寫資料完成預約</h3>
       <img class="infoImg of-cover w-100" src="./assets/images/index-12.png" alt="">
     </div>
   </div>
 </div>
 
-    <footer class="footer">
+    <footer class="footer text-primary">
       <div class="bg-warning">
-        <div class="container">
+        <div class="container py-9">
           <div class="row">
             <div class="col-12 col-md-9 col-lg-6">
-              <h2>有任何我們能幫助您的嗎？</h2>
-              <p>輸入電子信箱<br>將有專業人員在線幫您解決所有問題</p>
-              <input type="text" placeholder="example@gmail.com">
-              <button>送出</button>
+              <h2 class="fs-3xl lh-15 fs-md-6 lh-md-9 mb-3 mb-md-2">有任何我們能幫助您的嗎？</h2>
+              <p class="fs-l lh-7 fs-md-4 lh-md-6 mb-4">輸入電子信箱<br>將有專業人員在線幫您解決所有問題</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12 col-md-9 col-lg-6 d-flex">
+              <div class="input-group">
+                <input type="text" class="form-control" placeholder="example@gmail.com" aria-label="Recipient's username">
+                <button type="button" class="footerBtn input-group-text bg-secondary text-white">送出</ㄖ>
+              </div>
             </div>
           </div>
         </div>
       </div>
       <div class="container">
+        <div class="row align-items-center pt-2 pt-md-13">
+          <div class="col-md-3 d-none d-md-block mb-0 mb-md-6">
+            <a class="logo" href="index.html"></a>
+          </div>
+          <div class="col-md-3 d-none d-md-block">
+            <h3 class="fs-l lh-7">寵物服務</h3>
+          </div>
+          <div class="col-md-3 d-none d-md-block">
+            <h3 class="fs-l lh-7">加入我們</h3>
+          </div>
+          <div class="col-md-3 d-none d-md-block">
+            <h3 class="fs-l lh-7">聯繫我們</h3>
+          </div>
+        </div>
         <div class="row">
           <div class="col-md-3 d-none d-md-block">
-            <a class="logo" href="index.html"></a>
             <ul>
-              <li><a href="#">關於我們</a></li>
-              <li><a href="#">幫助中心</a></li>
-              <li><a href="#">使用條款</a></li>
-              <li><a href="#">隱私政策</a></li>
+              <li class="mb-6"><a href="#">關於我們</a></li>
+              <li class="mb-6"><a href="#">幫助中心</a></li>
+              <li class="mb-6"><a href="#">使用條款</a></li>
+              <li class="footerText"><a href="#">隱私政策</a></li>
             </ul>
           </div>
           <div class="col-md-3 d-none d-md-block">
-            <h3>寵物服務</h3>
             <ul>
-              <li><a href="#">寵物寄宿</a></li>
-              <li><a href="#">寵物到府保姆</a></li>
-              <li><a href="#">寵物美容洗澡</a></li>
+              <li class="mb-6"><a href="#">寵物寄宿</a></li>
+              <li class="mb-6"><a href="#">寵物到府保姆</a></li>
+              <li class="mb-6"><a href="#">寵物美容洗澡</a></li>
               <li><a href="#">寵物行為訓練</a></li>
             </ul>
           </div>
           <div class="col-md-3 d-none d-md-block">
-            <h3>加入我們</h3>
             <ul>
-              <li><a href="#">成為寵物保姆</a></li>
-              <li><a href="#">加入寵物計程車</a></li>
-              <li><a href="#">專屬 APP 下載</a></li>
+              <li class="mb-6"><a href="#">成為寵物保姆</a></li>
+              <li class="mb-6"><a href="#">加入寵物計程車</a></li>
+              <li class="mb-6"><a href="#">專屬 APP 下載</a></li>
               <li><a href="#">相關合約條款</a></li>
             </ul>
           </div>
           <div class="col-md-3 d-none d-md-block">
-            <h3>聯繫我們</h3>
             <p>petpet@petmail.com</p>
           </div>
         </div>
@@ -276,72 +304,91 @@
           <div class="col-12 col-md-3 col-lg-2">
             <div>
               <a class="logo d-block d-md-none" href="index.html"></a>
-              <div class="d-none d-md-block">
-                <span class="material-icons">local_phone</span><span>07-123-4567</span>
+              <div class="d-none d-md-flex">
+                <span class="material-icons mr-2">local_phone</span><span>07-123-4567</span>
               </div>
             </div>
           </div>
-          <div class="col-12 col-md-6 col-lg-4">
-            <p>Copyright © 2020 PetPet. All rights reserved.</p>
+          <div class="col-12 col-md-6 text-left text-md-right">
+            <p class="fs-s mb-6 mb-md-8 mb-lg-9">Copyright © 2020 PetPet. All rights reserved.</p>
           </div>
         </div>
       </div>
     </footer>
-    <!-- reserveModal -->
-<div class="modal fade" id="reserveModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" id="reserveModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="container">
-        <div class="d-block d-md-none">
-          <div class="timeLine bg-primary d-flex justify-content-around w-100">
-            <div class="timePoint">預約項目</div>
-            <div class="timePoint">預約資料</div>
-            <div class="timePoint">付款資訊</div>
+        <div class="d-block d-md-none mb-10">
+          <div class="timeLine bg-secondary d-flex justify-content-around w-100">
+            <div class="timePoint lh-9">預約項目</div>
+            <div class="timePoint lh-9">預約資料</div>
+            <div class="timePoint lh-9">付款資訊</div>
           </div>
         </div>
         <div class="row flex-column-reverse flex-lg-row">
           <div class="col-12 col-lg-8">
-            <h2 class="d-none d-lg-block">預約項目</h2>
-            <ul class="d-flex">
-              <li><span class="material-icons">house</span>寄宿</li>
-              <li><span class="material-icons">wash</span>美容</li>
-              <li><span class="material-icons">roofing</span>到府保姆</li>
-              <li><span class="material-icons">directions_walk</span>遛狗保姆</li>
+            <h2 class="d-none d-lg-block fs-xl lh-9 mb-8 text-primary">預約項目</h2>
+            <ul class="row mb-6 mb-md-7">
+              <li class="col-3">
+                <div class="reserveItem d-flex flex-column justify-content-center align-items-center rounded">
+                  <span class="material-icons">house</span>
+                  <p class="fs-l lh-7 fs-md-4 lh-md-6">寄宿</p>
+                </div>
+              </li>
+              <li class="col-3">
+                <div class="reserveItem d-flex flex-column justify-content-center align-items-center rounded">
+                  <span class="material-icons">wash</span>
+                  <p class="fs-l lh-7 fs-md-4 lh-md-6">美容</p>
+                </div>
+              </li>
+              <li class="col-3">
+                <div class="reserveItem d-flex flex-column justify-content-center align-items-center rounded">
+                  <span class="material-icons">roofing</span>
+                  <p class="fs-l lh-7 fs-md-4 lh-md-6">到府保姆</p>
+                </div>
+              </li>
+              <li class="col-3">
+                <div class="reserveItem d-flex flex-column justify-content-center align-items-center rounded">
+                  <span class="material-icons">directions_walk</span>
+                  <p>遛狗保姆</p>
+                </div>
+              </li>
             </ul>
-            <label>選擇日期</label>
+            <label class="mb-1">選擇日期</label>
             <div class="d-flex flex-column flex-md-row align-items-center">
               <div class="d-flex align-items-center w-100">
-                <select class="custom-select rounded-sm" id="sex" aria-label="Example select with button addon">
+                <select class="custom-select rounded-sm mb-2 mb-md-5" id="sex" aria-label="Example select with button addon">
                   <option value="1" selected="">2020-11-20</option>
                   <option value="2">2020-11-21</option>
                 </select>
-                <span>至</span>
+                <span class="mx-2 mb-5">至</span>
               </div>
               <div class="d-flex align-items-center w-100">
-                <select class="custom-select rounded-sm" id="sex" aria-label="Example select with button addon">
+                <select class="custom-select rounded-sm mb-5" id="sex" aria-label="Example select with button addon">
                   <option value="1" selected="">2020-11-20</option>
                   <option value="2">2020-11-21</option>
                 </select>
-                <span class="text-nowrap">共 1 晚</span>
+                <span class="text-nowrap ml-2 mb-5">共 1 晚</span>
               </div>
             </div>
-            <div class="d-flex">
-              <div>
-                <label>毛孩數量</label>
+            <div class="reserveSelect d-flex w-100">
+              <div class="selectItem mr-7 mr-md-6">
+                <label class="mb-1 text-nowrap">毛孩數量</label>
                 <select class="custom-select rounded-sm" id="sex" aria-label="Example select with button addon">
                   <option value="1" selected="">1隻</option>
                   <option value="2">2隻</option>
                 </select>
               </div>
-              <div>
-                <label>您的毛孩是</label>
+              <div class="selectItem mr-7 mr-md-6">
+                <label class="mb-1 text-nowrap">您的毛孩是</label>
                 <select class="custom-select rounded-sm" id="sex" aria-label="Example select with button addon">
                   <option value="1" selected="">貓</option>
                   <option value="2">狗</option>
                 </select>
               </div>
-              <div>
-                <label>年齡</label>
+              <div class="selectItem mr-7 mr-md-6">
+                <label class="mb-1 text-nowrap">年齡</label>
                 <select class="custom-select rounded-sm" id="sex" aria-label="Example select with button addon">
                   <option value="1" selected="">1歲</option>
                   <option value="2">2歲</option>
@@ -350,13 +397,13 @@
             </div>
           </div>
           <div class="col-12 col-lg-4">
-            <h2 class="d-block d-lg-none">預約項目</h2>
+            <h2 class="d-block d-lg-none fs-xl lh-9 mb-3 text-primary">預約項目</h2>
             <div class="d-flex flex-lg-column">
-              <img class="reserve-img of-cover" src="./assets/images/homestay-3.jpeg" alt="">
-              <div class="d-flex flex-column justify-content-center">
-                <div class="d-flex flex-column flex-md-row align-items-md-center">
-                  <h2>毛孩好家</h2>
-                  <div>
+              <img class="modal-img of-cover mb-6 mb-md-5 mb-lg-2 mr-3 mr-md-7 mr-lg-0" src="./assets/images/homestay-3.jpeg" alt="">
+              <div class="d-flex flex-column justify-content-center text-primary">
+                <div class="d-flex flex-column flex-md-row align-items-md-center mb-1 mb-md-2">
+                  <h2 class="fs-l lh-7 mr-2">毛孩好家</h2>
+                  <div class="star text-light-secondary">
                     <span class="material-icons">grade</span>
                     <span class="material-icons">grade</span>
                     <span class="material-icons">grade</span>
@@ -365,7 +412,7 @@
                   </div>
                 </div>
                 <div class="d-flex">
-                  <span class="material-icons">location_on</span>
+                  <span class="material-icons text-secondary">location_on</span>
                   <p>高雄市苓雅區、新興區、前鎮區</p>
                 </div>
               </div>
@@ -374,57 +421,59 @@
         </div>
         <div class="row flex-row-reverse flex-lg-row">
           <div class="col-12 col-lg-8 d-none d-md-block">
-            <div class="timeLine bg-primary d-flex justify-content-around w-100">
-              <div class="timePoint">預約項目</div>
-              <div class="timePoint">預約資料</div>
-              <div class="timePoint">付款資訊</div>
+            <div class="timeLine bg-secondary d-flex justify-content-around w-100 mb-0 mb-md-14">
+              <div class="timePoint lh-9">預約項目</div>
+              <div class="timePoint lh-9">預約資料</div>
+              <div class="timePoint lh-9">付款資訊</div>
             </div>
           </div>
           <div class="col-12 col-md-4">
-            <button type="button" data-toggle="modal" data-target="#paymentModal" data-dismiss="modal">下一步</button>
+            <button type="button" class="btn btn-secondary w-100 fs-l lh-7 py-2" data-toggle="modal" data-target="#infoModal" data-dismiss="modal">下一步</button>
           </div>
         </div>
       </div>
     </div>
   </div>
 </div>
-
-<!-- paymentModal -->
-<div class="modal fade" id="paymentModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="infoModal modal fade" id="infoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="container">
-        <div class="d-block d-md-none">
-          <div class="timeLine bg-primary d-flex justify-content-around w-100">
-            <div class="timePoint">預約項目</div>
-            <div class="timePoint">預約資料</div>
-            <div class="timePoint">付款資訊</div>
+        <div class="d-block d-md-none mb-10">
+          <div class="timeLine bg-secondary bg-primary d-flex justify-content-around w-100">
+            <div class="timePoint lh-9">預約項目</div>
+            <div class="timePoint lh-9">預約資料</div>
+            <div class="timePoint lh-9">付款資訊</div>
           </div>
         </div>
         <div class="row flex-column-reverse flex-lg-row">
           <div class="col-12 col-lg-8">
-            <h2 class="d-none d-lg-block">付款資訊</h2>
-            <div class="form-group">
-              <label for="exampleInputEmail1">信用卡帳號</label>
-              <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Xxxx-xxxx-xxxx-xxxx">
+            <h2 class="d-none d-lg-block fs-xl lh-9 mb-8 text-primary">預約資料</h2>
+            <div class="form-group mb-5">
+              <label for="exampleInputEmail1" class="mb-1">毛孩姓名</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" placeholder="請輸入毛孩姓名">
             </div>
-            <div class="form-group">
-              <label for="exampleInputEmail1">有效日期</label>
-              <input type="email" class="form-control" id="exampleInputEmail1" placeholder="(MM/YY)">
+            <div class="form-group mb-5">
+              <label for="exampleInputEmail1" class="mb-1">飼主姓名</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" placeholder="請輸入飼主姓名">
             </div>
-            <div class="form-group">
-              <label for="exampleInputEmail1">安全碼</label>
-              <input type="email" class="form-control" id="exampleInputEmail1" placeholder="***">
+            <div class="form-group mb-5">
+              <label for="exampleInputEmail1" class="mb-1">Email</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" placeholder="example@gmail.com">
+            </div>
+            <div class="form-group mb-3 mb-md-13 mb-lg-10">
+              <label for="exampleInputEmail1" class="mb-1">聯絡電話</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" placeholder="0912-345-678">
             </div>
           </div>
           <div class="col-12 col-lg-4">
-            <h2 class="d-block d-lg-none">預約項目</h2>
+            <h2 class="d-block d-lg-none fs-xl lh-9 mb-3 text-primary">預約資料</h2>
             <div class="d-flex flex-lg-column">
-              <img class="reserve-img of-cover" src="./assets/images/homestay-3.jpeg" alt="">
-              <div class="d-flex flex-column justify-content-center">
-                <div class="d-flex flex-column flex-md-row align-items-md-center">
-                  <h2>毛孩好家</h2>
-                  <div>
+              <img class="modal-img of-cover mb-6 mb-md-5 mb-lg-2 mr-3 mr-md-7 mr-lg-0" src="./assets/images/homestay-3.jpeg" alt="">
+              <div class="d-flex flex-column justify-content-center text-primary">
+                <div class="d-flex flex-column flex-md-row align-items-md-center mb-1 mb-md-2">
+                  <h2 class="fs-l lh-7 mr-2">毛孩好家</h2>
+                  <div class="star text-light-secondary">
                     <span class="material-icons">grade</span>
                     <span class="material-icons">grade</span>
                     <span class="material-icons">grade</span>
@@ -433,7 +482,74 @@
                   </div>
                 </div>
                 <div class="d-flex">
-                  <span class="material-icons">location_on</span>
+                  <span class="material-icons text-secondary">location_on</span>
+                  <p>高雄市苓雅區、新興區、前鎮區</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row align-items-center flex-row-reverse flex-lg-row">
+          <div class="col-12 col-lg-8 d-none d-md-block mb-14 mb-lg-0">
+            <div class="timeLine bg-secondary bg-primary d-flex justify-content-around w-100">
+              <div class="timePoint lh-9">預約項目</div>
+              <div class="timePoint lh-9">預約資料</div>
+              <div class="timePoint lh-9">付款資訊</div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4 d-flex flex-column flex-md-row flex-lg-column">
+            <button type="button" class="btn text-secondary fs-l lh-7 py-2" data-toggle="modal" data-target="#reserveModal" data-dismiss="modal">返回</button>
+            <button type="button" class="btn btn-secondary fs-l lh-7 py-2" data-toggle="modal" data-target="#paymentModal" data-dismiss="modal">下一步</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    <div class="paymentModal modal fade" id="paymentModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="container">
+        <div class="d-block d-md-none">
+          <div class="timeLine bg-secondary bg-primary d-flex justify-content-around w-100">
+            <div class="timePoint lh-9">預約項目</div>
+            <div class="timePoint lh-9">預約資料</div>
+            <div class="timePoint lh-9">付款資訊</div>
+          </div>
+        </div>
+        <div class="row flex-column-reverse flex-lg-row">
+          <div class="col-12 col-lg-8">
+            <h2 class="d-none d-lg-block fs-xl lh-9 mb-8 text-primary">付款資訊</h2>
+            <div class="form-group mb-5">
+              <label for="exampleInputEmail1" class="mb-1">信用卡帳號</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Xxxx-xxxx-xxxx-xxxx">
+            </div>
+            <div class="form-group mb-5">
+              <label for="exampleInputEmail1" class="mb-1">有效日期</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" placeholder="(MM/YY)">
+            </div>
+            <div class="form-group payFormGroup">
+              <label for="exampleInputEmail1" class="mb-1">安全碼</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" placeholder="***">
+            </div>
+          </div>
+          <div class="col-12 col-lg-4">
+            <h2 class="d-block d-lg-none fs-xl lh-9 mb-8 text-primary pt-10 pt-md-0">付款資料</h2>
+            <div class="d-flex d-md-none d-lg-flex flex-lg-column ">
+              <img class="modal-img of-cover mb-6 mb-md-5 mb-lg-2 mr-3 mr-md-7 mr-lg-0" src="./assets/images/homestay-3.jpeg" alt="">
+              <div class="d-flex flex-column justify-content-center text-primary">
+                <div class="d-flex flex-column flex-md-row align-items-md-center text-primary mb-1 mb-md-2">
+                  <h2 class="fs-l lh-7 mr-2">毛孩好家</h2>
+                  <div class="star text-light-secondary">
+                    <span class="material-icons">grade</span>
+                    <span class="material-icons">grade</span>
+                    <span class="material-icons">grade</span>
+                    <span class="material-icons">grade</span>
+                    <span class="material-icons">grade</span>
+                  </div>
+                </div>
+                <div class="d-flex">
+                  <span class="material-icons text-secondary">location_on</span>
                   <p>高雄市苓雅區、新興區、前鎮區</p>
                 </div>
               </div>
@@ -442,50 +558,47 @@
         </div>
         <div class="row align-items-center flex-row-reverse flex-lg-row">
           <div class="col-12 col-lg-8 d-none d-md-block">
-            <div class="timeLine bg-primary d-flex justify-content-around w-100">
-              <div class="timePoint">預約項目</div>
-              <div class="timePoint">預約資料</div>
-              <div class="timePoint">付款資訊</div>
+            <div class="timeLine bg-secondary bg-primary d-flex justify-content-around w-100 mb-14 mb-lg-0">
+              <div class="timePoint lh-9">預約項目</div>
+              <div class="timePoint lh-9">預約資料</div>
+              <div class="timePoint lh-9">付款資訊</div>
             </div>
           </div>
-          <div class="col-12 col-md-4 d-flex flex-column">
-            <button type="button" class="" data-toggle="modal" data-target="#reserveModal"
-              data-dismiss="modal">返回</button>
-            <button type="button" data-toggle="modal" data-target="#successModal" data-dismiss="modal">下一步</button>
+          <div class="col-12 col-md-4 d-flex flex-column flex-md-row flex-lg-column">
+            <button type="button" class="btn text-secondary fs-l lh-7 py-2" data-toggle="modal" data-target="#infoModal" data-dismiss="modal">返回</button>
+            <button type="button" class="btn btn-secondary fs-l lh-7 py-2" data-toggle="modal" data-target="#successModal" data-dismiss="modal">下一步</button>
           </div>
         </div>
       </div>
     </div>
   </div>
 </div>
-
-<!-- successModal -->
-<div class="modal fade" id="successModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="successModal modal fade" id="successModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="container d-flex justify-content-center text-center">
-        <div>
-          <span class="material-icons">pets</span>
-          <h2>預約成功!</h2>
-          <p>您可以在會員頁找到您的預約資料並修改或取消預約。</p>
-          <a href="login.html" class="btn btn-primary successModalBtn">前往會員頁</a>
+        <div class="text-primary">
+          <span class="material-icons text-light-secondary mb-3 mb-lg-5">pets</span>
+          <h2 class="mb-3">預約成功!</h2>
+          <p class="mb-4 mb-md-10">您可以在會員頁找到您的預約資料並修改或取消預約。</p>
+          <a href="login.html" class="successBtn btn btn-secondary w-100 fs-l lh-7 py-2">前往會員頁</a>
         </div>
       </div>
     </div>
   </div>
 </div>
 
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-      crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-      crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-      crossorigin="anonymous"></script>
-    <script src="./assets/js/vendors.js"></script>
-    <script src="./assets/js/all.js"></script>
+      <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+      <script src="./assets/js/vendors.js"></script>
+      <script src="./assets/js/all.js"></script>
 </body>
 
 </html>
