@@ -1,0 +1,33 @@
+.modal-dialog{
+  max-width: 920px;
+  @include pad(){
+    max-width: 690px;
+  }
+  @include mobile(){
+    max-width: 465px;
+  }
+}
+.modal-content{
+  padding: 40px 9px 20px 9px;
+  @include pad(){
+    padding: 60px 45px 48px 45px;
+  }
+  @include mobile(){
+    padding: 16px 15px 48px 15px;
+  }
+}
+.modal-img{
+  width: 282px;
+  height: 282px;
+  @include pad(){
+    width: 150px;
+    height: 150px;
+  }
+  @include mobile(){
+    width: 100px;
+    height: 100px;
+  }
+}
+.star .material-icons{
+  font-size: 20px;
+}

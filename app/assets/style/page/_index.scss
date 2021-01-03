@@ -3,46 +3,90 @@
   @include pad(){
     width: 210px;
     height: 288px;
+    padding-top: 104px;
   }
-  @include pad(){
+  @include mobile(){
     width: 400px;
     height: 352px;
-    object-fit: cover;
+    padding-top: 0px;
   }
 }
 .searchContent{
   max-width: 635px;
+  @include pad(){
+    margin-bottom: 229px;
+  }
+  @include mobile(){
+    margin-bottom: 60px;
+  }
+  .custom-select:nth-child(1){
+    width: 50%;
+    @include pad(){
+      width: 100%;
+    }
+  }
+  .btn {
+    padding: 8px 28px;
+    border-radius: 0 0.25rem 0.25rem 0;
+    @include pad(){
+      border-radius: 0.25rem;
+    }
+  }
   @include mobile(){
     .searchText{
       text-align: center;
     }
   }
 }
-
-// hot
-.hotItem{
-  box-shadow: 0px 3px 6px #00000029;
-}
-.hotImg{
-  width: 100%;
-  height: 120px;
-  margin-bottom: 54px;
-}
-.hotPeople{
-  position: absolute;
-  top: 70px;
-}
-
 // demand
-.demandItem{
-  height: 350px;
+.demand{
+  .col-md-4,
+  .col-md-3,
+  .col-md-2{
+    padding: 0 3px;
+    @include pad(){
+      padding:0 2px;
+    }
+  }
+  .col-12:nth-child(3) .col-12{
+    margin-bottom: 6px;
+    @include pad(){
+      margin-bottom: 4px;
+    }
+  }
+  .demandItem{
+    height: 350px;
+    @include pad(){
+      height: 210px;
+    }
+    @include mobile(){
+      height: 132px;
+    }
+  }
+  .demandItemItem{
+    height: 172px;
+    @include pad(){
+      height: 103px;
+    }
+    @include mobile(){
+      height: 132px;
+    }
+  }
 }
-
 
 // wall
 .wall{
   background-image: url("../../assets/images/index-9.jpeg");
   height: 584px;
+  @include mobile(){
+    height: 812px;
+  }
+  .wallTitle{
+    margin-bottom: 100px;
+    @include mobile(){
+      margin-bottom: 47px;
+    }
+  }
 }
 .wallItem{
   border-left: 2px solid #FFFFFF;

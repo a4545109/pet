@@ -1,3 +1,6 @@
+body{
+  font-family: "Roboto", "Noto Sans TC", sans-serif;
+}
 img{
   display: block;
   max-width: 100%;
@@ -14,9 +17,13 @@ hr{
 p{
   margin: 0;
 }
-h1,h2,h3,h4,h5,h6{
+h1,h2,h3,h4,h5,h6,label{
   margin: 0;
 }
 a:hover{
   text-decoration: none;
+}
+.custom-select {
+  height: auto;
+  border-radius: 0;
 }

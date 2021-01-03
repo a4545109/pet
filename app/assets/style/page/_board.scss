@@ -1,0 +1,25 @@
+.boardDate{
+  .col-md-2,
+  .col-lg-2{
+    padding: 4px;
+  }
+  .col-3,
+  .col-6{
+    padding: 8px;
+  }
+}
+.boardItem{
+  box-shadow: 0px 3px 6px #00000029;
+  height: 297px;
+}
+
+// 分頁
+.pagination{
+  li{
+    border:1px solid #DEE2E6;
+  }
+  a{
+    display: block;
+    padding: 9px 16px;
+  }
+}

@@ -4,229 +4,299 @@ layout: ./app/layout.ejs
 engine: ejs
 current: reserve
 ---
-<div class="container">
+<div class="container text-primary pt-0 pt-md-13 pt-lg-15">
   <div class="row flex-column-reverse flex-md-row">
     <div class="col-12 col-md-7 col-lg-6">
-      <div class="d-flex">
-        <h2>毛孩好家</h2>
-        <span class="material-icons">star</span>
-        <span class="material-icons">star</span>
-        <span class="material-icons">star</span>
-        <span class="material-icons">star</span>
-        <span class="material-icons">star</span>
+      <div class="d-flex align-items-center mb-4">
+        <h2 class="lh-12 mr-4">毛孩好家</h2>
+        <span class="material-icons text-light-secondary fs-l">star</span>
+        <span class="material-icons text-light-secondary fs-l">star</span>
+        <span class="material-icons text-light-secondary fs-l">star</span>
+        <span class="material-icons text-light-secondary fs-l">star</span>
+        <span class="material-icons text-light-secondary fs-l">star</span>
       </div>
-      <h3>給予毛孩最舒適的環境是我們的職責！</h3>
-      <p>已提供 52 筆服務、並獲得 30 個評價</p>
-      <h3>服務內容</h3>
-      <p>寄宿 NT$ 450 /晚</p>
+      <h3 class="fs-xl lh-9 fs-lg-fs-l lh-lg-7 mb-2 mb-md-3">給予毛孩最舒適的環境是我們的職責！</h3>
+      <p class="mb-7 mb-lg-13">已提供 52 筆服務、並獲得 30 個評價</p>
+      <h3 class="fs-l lh-7 mb-3 mb-lg-4">服務內容</h3>
+      <p class="mb-2">寄宿 NT$ 450 /晚</p>
       <p>美容洗澡 NT$ 500 （含剪指甲、剃腳底毛、清耳朵）</p>
-      <p>個性貓另加價</p>
-      <p>到府保姆 NT$ 550 /晚</p>
-      <div class="d-flex">
-        <span class="material-icons">location_on</span>
+      <p class="text-secondary fs-s lh-5 mb-2">個性貓另加價</p>
+      <p class="mb-7 mb-lg-10">到府保姆 NT$ 550 /晚</p>
+      <div class="d-flex mb-7 mb-lg-13">
+        <span class="material-icons text-secondary">location_on</span>
         <p>高雄市鹽埕區七賢三路123號<br>服務區域：高雄市 全區</p>
       </div>
-      <button type="button">聯繫</button>
-      <button type="button" data-toggle="modal" data-target="#reserveModal">立刻預約</button>
+      <div class="row mb-10 mb-md-13">
+        <div class="col-6 col-md-5 col-lg-4">
+          <button type="button" class="btn btn-outline-secondary fs-l lh-7 w-100 py-2">聯繫</button>
+        </div>
+        <div class="col-6 col-md-5 col-lg-6">
+          <button type="button" class="btn btn-secondary fs-l lh-7 w-100 py-2" data-toggle="modal"
+            data-target="#reserveModal">立刻預約</button>
+        </div>
+      </div>
     </div>
     <div class="col-12 col-md-5 col-lg-6">
-      <img class="reserveBigImg w-100 of-cover" src="./assets/images/homestay-3.jpeg" alt="">
-      <div class="d-flex">
-        <img class="reserveSmallImg of-cover" src="./assets/images/homestay-3.jpeg" alt="">
-        <img class="reserveSmallImg of-cover" src="./assets/images/index-5.jpeg" alt="">
-        <img class="reserveSmallImg of-cover" src="./assets/images/detail-1.jpeg" alt="">
-        <img class="reserveSmallImg of-cover" src="./assets/images/detail2.jpeg" alt="">
+      <img class="reserveBigImg w-100 of-cover rounded mb-2 mb-lg-3" src="./assets/images/homestay-3.jpeg" alt="">
+      <div class="reserveImg d-flex">
+        <img class="reserveSmallImg of-cover rounded mr-1 mr-lg-2" src="./assets/images/homestay-3.jpeg" alt="">
+        <img class="reserveSmallImg of-cover rounded mr-1 mr-lg-2" src="./assets/images/index-5.jpeg" alt="">
+        <img class="reserveSmallImg of-cover rounded mr-1 mr-lg-2" src="./assets/images/detail-1.jpeg" alt="">
+        <img class="reserveSmallImg of-cover rounded mr-1 mr-lg-2" src="./assets/images/detail2.jpeg" alt="">
       </div>
     </div>
   </div>
   <div class="row flex-row flex-lg-row-reverse ">
     <div class="col-12 col-md-7 col-lg-6">
-      <h2>關於</h2>
-      <p>家中有5隻貓寶貝，對貓咪有瘋狂的熱愛 。 目前已經照顧超過30位狗狗貓咪朋友！對於我來說，能夠與你們相遇都是緣分！</p>
-      <h2>經歷</h2>
-      <p>曾接手過數次奶貓，照顧後送養成功，目前都是健健康康的毛孩。</p>
-      <h2>技能證照</h2>
-      <p>寵物美容丙級技術證</p>
-      <h2>提供</h2>
-      <p>貓砂盆、罐頭、乾飼料</p>
-      <h2>毛孩活動範圍</h2>
-      <p>想去的任何地方</p>
-      <h2>服務地區</h2>
-      <p>高雄市</p>
+      <h2 class="fs-xl lh-9 mb-3">關於</h2>
+      <p class="lh-7 lh-lg-6 mb-5 mb-md-7 mb-lg-10">家中有5隻貓寶貝，對貓咪有瘋狂的熱愛 。<br>目前已經照顧超過30位狗狗貓咪朋友！對於我來說，能夠與你們相遇都是緣分！</p>
+      <h2 class="fs-xl lh-9 mb-3">經歷</h2>
+      <p class="lh-7 lh-lg-6 mb-5 mb-md-7 mb-lg-10">曾接手過數次奶貓，照顧後送養成功，目前都是健健康康的毛孩。</p>
+      <h2 class="fs-xl lh-9 mb-3">技能證照</h2>
+      <p class="lh-7 lh-lg-6 mb-5 mb-md-7 mb-lg-10">寵物美容丙級技術證</p>
+      <h2 class="fs-xl lh-9 mb-3">提供</h2>
+      <p class="lh-7 lh-lg-6 mb-5 mb-md-7 mb-lg-10">貓砂盆、罐頭、乾飼料</p>
+      <h2 class="fs-xl lh-9 mb-3">毛孩活動範圍</h2>
+      <p class="lh-7 lh-lg-6 mb-5 mb-md-7 mb-lg-10">想去的任何地方</p>
+      <h2 class="fs-xl lh-9 mb-3">服務地區</h2>
+      <p class="lh-7 lh-lg-6 mb-10 mb-md-13 mb-lg-15">高雄市</p>
     </div>
   </div>
   <!-- 飼主評論 -->
   <div class="row flex-row-reverse">
     <div class="col-12 col-lg-6">
-      <h2>飼主評論（30）</h2>
+      <h2 class="reserveTitle mb-6">飼主評論（30）</h2>
       <ul class="row">
-        <li class="col-12 col-md-6 commentItem d-flex">
-          <img src="./assets/images/person-4.png" alt="">
-          <div>
-            <div class="d-flex align-items-center">
-              <h3>葉子</h3>
-              <span>Oct 17 2020</span>
+        <li class="col-12 col-md-6">
+          <div class="commentItem d-flex align-items-center mb-5 rounded p-3">
+            <img class="commentImg mr-5" src="./assets/images/person-4.png" alt="">
+            <div>
+              <div class="d-flex align-items-center">
+                <h3 class="fs-m lh-6 mr-2">葉子</h3>
+                <span class="commentTime fs-s lh-5">Oct 17 2020</span>
+              </div>
+              <span class="material-icons text-light-secondary fs-l">star</span>
+              <span class="material-icons text-light-secondary fs-l">star</span>
+              <span class="material-icons text-light-secondary fs-l">star</span>
+              <span class="material-icons text-light-secondary fs-l">star</span>
+              <span class="material-icons text-light-secondary fs-l">star</span>
+              <p>服務很秋！</p>
             </div>
-            <span class="material-icons">star</span>
-            <span class="material-icons">star</span>
-            <span class="material-icons">star</span>
-            <span class="material-icons">star</span>
-            <span class="material-icons">star</span>
-            <p>服務很秋！</p>
           </div>
         </li>
-        <li class="col-12 col-md-6 commentItem d-flex">
-          <img src="./assets/images/person-5.png" alt="">
-          <div>
-            <div class="d-flex align-items-center">
-              <h3>葉子</h3>
-              <span>Oct 17 2020</span>
+        <li class="col-12 col-md-6">
+          <div class="commentItem d-flex align-items-center mb-5 rounded p-3">
+            <img class="commentImg mr-5" src="./assets/images/person-5.png" alt="">
+            <div>
+              <div class="d-flex align-items-center">
+                <h3 class="fs-m lh-6 mr-2">Joanne</h3>
+                <span class="commentTime fs-s lh-5">Oct 17 2020</span>
+              </div>
+              <span class="material-icons text-light-secondary fs-l">star</span>
+              <span class="material-icons text-light-secondary fs-l">star</span>
+              <span class="material-icons text-light-secondary fs-l">star</span>
+              <span class="material-icons text-light-secondary fs-l">star</span>
+              <span class="material-icons text-light-secondary fs-l">star</span>
+              <p>貓完全不想回家了。</p>
             </div>
-            <span class="material-icons">star</span>
-            <span class="material-icons">star</span>
-            <span class="material-icons">star</span>
-            <span class="material-icons">star</span>
-            <span class="material-icons">star</span>
-            <p>服務很秋！</p>
           </div>
         </li>
-        <li class="col-12 col-md-6 commentItem d-flex">
-          <img src="./assets/images/person-6.png" alt="">
-          <div>
-            <div class="d-flex align-items-center">
-              <h3>葉子</h3>
-              <span>Oct 17 2020</span>
+        <li class="col-12 col-md-6">
+          <div class="commentItem d-flex align-items-center mb-5 rounded p-3">
+            <img class="commentImg mr-5" src="./assets/images/person-6.png" alt="">
+            <div>
+              <div class="d-flex align-items-center">
+                <h3 class="fs-m lh-6 mr-2">Ray</h3>
+                <span class="commentTime fs-s lh-5">Oct 17 2020</span>
+              </div>
+              <span class="material-icons text-light-secondary fs-l">star</span>
+              <span class="material-icons text-light-secondary fs-l">star</span>
+              <span class="material-icons text-light-secondary fs-l">star</span>
+              <span class="material-icons text-light-secondary fs-l">star</span>
+              <span class="material-icons text-light-secondary fs-l">star</span>
+              <p>超喜歡超棒超讚的...</p>
             </div>
-            <span class="material-icons">star</span>
-            <span class="material-icons">star</span>
-            <span class="material-icons">star</span>
-            <span class="material-icons">star</span>
-            <span class="material-icons">star</span>
-            <p>服務很秋！</p>
           </div>
         </li>
-        <li class="col-12 col-md-6 commentItem d-flex">
-          <img src="./assets/images/person-7.png" alt="">
-          <div>
-            <div class="d-flex align-items-center">
-              <h3>葉子</h3>
-              <span>Oct 17 2020</span>
+        <li class="col-12 col-md-6">
+          <div class="commentItem d-flex align-items-center mb-5 rounded p-3">
+            <img class="commentImg mr-5" src="./assets/images/person-7.png" alt="">
+            <div>
+              <div class="d-flex align-items-center">
+                <h3 class="fs-m lh-6 mr-2">穎旻</h3>
+                <span class="commentTime fs-s lh-5">Oct 17 2020</span>
+              </div>
+              <span class="material-icons text-light-secondary fs-l">star</span>
+              <span class="material-icons text-light-secondary fs-l">star</span>
+              <span class="material-icons text-light-secondary fs-l">star</span>
+              <span class="material-icons text-light-secondary fs-l">star</span>
+              <span class="material-icons text-light-secondary fs-l">star</span>
+              <p>下次還會麻煩您～</p>
             </div>
-            <span class="material-icons">star</span>
-            <span class="material-icons">star</span>
-            <span class="material-icons">star</span>
-            <span class="material-icons">star</span>
-            <span class="material-icons">star</span>
-            <p>服務很秋！</p>
           </div>
         </li>
-        <li class="col-12 col-md-6 commentItem d-flex">
-          <img src="./assets/images/person-8.png" alt="">
-          <div>
-            <div class="d-flex align-items-center">
-              <h3>葉子</h3>
-              <span>Oct 17 2020</span>
+        <li class="col-12 col-md-6">
+          <div class="commentItem d-flex align-items-center mb-5 mb-md-2 rounded p-3">
+            <img class="commentImg mr-5" src="./assets/images/person-8.png" alt="">
+            <div>
+              <div class="d-flex align-items-center">
+                <h3 class="fs-m lh-6 mr-2">俊儀</h3>
+                <span class="commentTime fs-s lh-5">Oct 17 2020</span>
+              </div>
+              <span class="material-icons text-light-secondary fs-l">star</span>
+              <span class="material-icons text-light-secondary fs-l">star</span>
+              <span class="material-icons text-light-secondary fs-l">star</span>
+              <span class="material-icons text-light-secondary fs-l">star</span>
+              <span class="material-icons text-light-secondary fs-l">star</span>
+              <p>讚的！</p>
             </div>
-            <span class="material-icons">star</span>
-            <span class="material-icons">star</span>
-            <span class="material-icons">star</span>
-            <span class="material-icons">star</span>
-            <span class="material-icons">star</span>
-            <p>服務很秋！</p>
           </div>
         </li>
-        <li class="col-12 col-md-6 commentItem d-flex">
-          <img src="./assets/images/person-9.png" alt="">
-          <div>
-            <div class="d-flex align-items-center">
-              <h3>葉子</h3>
-              <span>Oct 17 2020</span>
+        <li class="col-12 col-md-6">
+          <div class="commentItem d-flex align-items-center mb-2 rounded p-3">
+            <img class="commentImg mr-5" src="./assets/images/person-9.png" alt="">
+            <div>
+              <div class="d-flex align-items-center">
+                <h3 class="fs-m lh-6 mr-2">子琪</h3>
+                <span class="commentTime fs-s lh-5">Oct 17 2020</span>
+              </div>
+              <span class="material-icons text-light-secondary fs-l">star</span>
+              <span class="material-icons text-light-secondary fs-l">star</span>
+              <span class="material-icons text-light-secondary fs-l">star</span>
+              <span class="material-icons text-light-secondary fs-l">star</span>
+              <span class="material-icons text-light-secondary fs-l">star</span>
+              <p>服務很棒耶哈哈哈！</p>
             </div>
-            <span class="material-icons">star</span>
-            <span class="material-icons">star</span>
-            <span class="material-icons">star</span>
-            <span class="material-icons">star</span>
-            <span class="material-icons">star</span>
-            <p>服務很秋！</p>
           </div>
         </li>
       </ul>
+      <a href="#" class="d-block text-right mb-10 mb-md-13 mb-lg-15">查看更多</a>
     </div>
   </div>
   <!-- 其他保母 -->
   <div class="row flex-row-reverse">
     <div class="col-12 col-lg-6">
-      <h2>其他 <span>高雄市</span><span>寄宿</span> 的寵物保姆</h2>
+      <h2 class="reserveTitle mb-6">其他 <span class="text-secondary">高雄市 </span><span class="text-secondary">寄宿</span>
+        的寵物保姆
+      </h2>
       <ul class="row">
         <li class="col-6 col-md-4">
-          <img src="./assets/images/homestay-2.jpeg" alt="">
-          <div>
-            <h3>寵屋屋</h3>
-            <span class="material-icons">star</span>
-            <span class="material-icons">star</span>
-            <span class="material-icons">star</span>
-            <span class="material-icons">star</span>
-            <p>寄宿、美容洗澡、到府保姆</p>
+          <div class="reserve-Item d-flex flex-column justify-content-between mb-3 mb-md-4 mb-lg-2">
+            <div>
+              <img class="babysitter-img w-100 of-cover" src="./assets/images/homestay-2.jpeg" alt="">
+              <div class="px-3 pt-2">
+                <h3 class="fs-m lh-6">寵屋屋</h3>
+                <span class="material-icons text-light-secondary fs-m">star</span>
+                <span class="material-icons text-light-secondary fs-m">star</span>
+                <span class="material-icons text-light-secondary fs-m">star</span>
+                <span class="material-icons text-light-secondary fs-m">star</span>
+                <p class="fs-s lh-5">寄宿、美容洗澡、到府保姆</p>
+              </div>
+            </div>
+            <div class="d-flex d-md-none">
+              <button type="button" class="btn text-primary w-100 py-3">聯繫</button>
+              <button type="button" class="btn text-secondary w-100 py-3" data-toggle="modal" data-target="#reserveModal">預約</button>
+            </div>
           </div>
         </li>
         <li class="col-6 col-md-4">
-          <img src="./assets/images/homestay-6.jpeg" alt="">
-          <div>
-            <h3>汪汪隊</h3>
-            <span class="material-icons">star</span>
-            <span class="material-icons">star</span>
-            <span class="material-icons">star</span>
-            <span class="material-icons">star</span>
-            <span class="material-icons">star</span>
-            <p>寄宿、到府保姆、寵物行為訓練</p>
+          <div class="reserve-Item d-flex flex-column justify-content-between mb-3 mb-md-4 mb-lg-2">
+            <div>
+              <img class="babysitter-img w-100 of-cover" src="./assets/images/homestay-6.jpeg" alt="">
+              <div class="px-3 pt-2">
+                <h3 class="fs-m lh-6">汪汪隊</h3>
+                <span class="material-icons text-light-secondary fs-m">star</span>
+                <span class="material-icons text-light-secondary fs-m">star</span>
+                <span class="material-icons text-light-secondary fs-m">star</span>
+                <span class="material-icons text-light-secondary fs-m">star</span>
+                <span class="material-icons text-light-secondary fs-m">star</span>
+                <p class="fs-s lh-5">寄宿、到府保姆、寵物行為訓練</p>
+              </div>
+            </div>
+            <div class="d-flex d-md-none">
+              <button type="button" class="btn text-primary w-100 py-3">聯繫</button>
+              <button type="button" class="btn text-secondary w-100 py-3" data-toggle="modal" data-target="#reserveModal">預約</button>
+            </div>
           </div>
         </li>
         <li class="col-6 col-md-4">
-          <img src="./assets/images/homestay-8.jpeg" alt="">
-          <div>
-            <h3>萌寵底家</h3>
-            <span class="material-icons">star</span>
-            <span class="material-icons">star</span>
-            <span class="material-icons">star</span>
-            <span class="material-icons">star</span>
-            <span class="material-icons">star</span>
-            <p>寄宿、到府保姆</p>
+          <div class="reserve-Item d-flex flex-column justify-content-between mb-3 mb-md-4 mb-lg-2">
+            <div>
+              <img class="babysitter-img w-100 of-cover" src="./assets/images/homestay-8.jpeg" alt="">
+              <div class="px-3 pt-2">
+                <h3 class="fs-m lh-6">萌寵底家</h3>
+                <span class="material-icons text-light-secondary fs-m">star</span>
+                <span class="material-icons text-light-secondary fs-m">star</span>
+                <span class="material-icons text-light-secondary fs-m">star</span>
+                <span class="material-icons text-light-secondary fs-m">star</span>
+                <span class="material-icons text-light-secondary fs-m">star</span>
+                <p class="fs-s lh-5">寄宿、到府保姆</p>
+              </div>
+            </div>
+            <div class="d-flex d-md-none">
+              <button type="button" class="btn text-primary w-100 py-3">聯繫</button>
+              <button type="button" class="btn text-secondary w-100 py-3" data-toggle="modal" data-target="#reserveModal">預約</button>
+            </div>
           </div>
         </li>
         <li class="col-6 col-md-4">
-          <img src="./assets/images/homestay-4.jpeg" alt="">
-          <div>
-            <h3>妖貓X僕SS</h3>
-            <span class="material-icons">star</span>
-            <span class="material-icons">star</span>
-            <span class="material-icons">star</span>
-            <span class="material-icons">star</span>
-            <span class="material-icons">star</span>
-            <p>寄宿、美容洗澡</p>
+          <div class="reserve-Item d-flex flex-column justify-content-between mb-3 mb-md-4">
+            <div>
+              <img class="babysitter-img w-100 of-cover" src="./assets/images/homestay-4.jpeg" alt="">
+              <div class="px-3 pt-2">
+                <h3 class="fs-m lh-6">妖貓X僕SS</h3>
+                <span class="material-icons text-light-secondary fs-m">star</span>
+                <span class="material-icons text-light-secondary fs-m">star</span>
+                <span class="material-icons text-light-secondary fs-m">star</span>
+                <span class="material-icons text-light-secondary fs-m">star</span>
+                <span class="material-icons text-light-secondary fs-m">star</span>
+                <p class="fs-s lh-5">寄宿、美容洗澡</p>
+              </div>
+            </div>
+            <div class="d-flex d-md-none">
+              <button type="button" class="btn text-primary w-100 py-3">聯繫</button>
+              <button type="button" class="btn text-secondary w-100 py-3" data-toggle="modal" data-target="#reserveModal">預約</button>
+            </div>
           </div>
         </li>
         <li class="col-6 col-md-4">
-          <img src="./assets/images/homestay-7.jpeg" alt="">
-          <div>
-            <h3>卯咪</h3>
-            <span class="material-icons">star</span>
-            <span class="material-icons">star</span>
-            <span class="material-icons">star</span>
-            <span class="material-icons">star</span>
-            <span class="material-icons">star</span>
-            <p>寄宿、寵物行為訓練</p>
+          <div class="reserve-Item d-flex flex-column justify-content-between mb-13 mb-lg-15">
+            <div>
+              <img class="babysitter-img w-100 of-cover" src="./assets/images/homestay-7.jpeg" alt="">
+              <div class="px-3 pt-2">
+                <h3 class="fs-m lh-6">卯咪</h3>
+                <span class="material-icons text-light-secondary fs-m">star</span>
+                <span class="material-icons text-light-secondary fs-m">star</span>
+                <span class="material-icons text-light-secondary fs-m">star</span>
+                <span class="material-icons text-light-secondary fs-m">star</span>
+                <span class="material-icons text-light-secondary fs-m">star</span>
+                <p class="fs-s lh-5">寄宿、寵物行為訓練</p>
+              </div>
+            </div>
+            <div class="d-flex d-md-none">
+              <button type="button" class="btn text-primary w-100 py-3">聯繫</button>
+              <button type="button" class="btn text-secondary w-100 py-3" data-toggle="modal" data-target="#reserveModal">預約</button>
+            </div>
           </div>
         </li>
         <li class="col-6 col-md-4">
-          <img src="./assets/images/homestay-5.jpeg" alt="">
-          <div>
-            <h3>貓是主我是僕</h3>
-            <span class="material-icons">star</span>
-            <span class="material-icons">star</span>
-            <span class="material-icons">star</span>
-            <span class="material-icons">star</span>
-            <span class="material-icons">star</span>
-            <p>寄宿</p>
+          <div class="reserve-Item d-flex flex-column justify-content-between mb-13 mb-lg-15">
+            <div>
+              <img class="babysitter-img w-100 of-cover" src="./assets/images/homestay-5.jpeg" alt="">
+              <div class="px-3 pt-2">
+                <h3 class="fs-m lh-6">貓是主我是僕</h3>
+                <span class="material-icons text-light-secondary fs-m">star</span>
+                <span class="material-icons text-light-secondary fs-m">star</span>
+                <span class="material-icons text-light-secondary fs-m">star</span>
+                <span class="material-icons text-light-secondary fs-m">star</span>
+                <span class="material-icons text-light-secondary fs-m">star</span>
+                <p class="fs-s lh-5">寄宿</p>
+              </div>
+            </div>
+            <div class="d-flex d-md-none">
+              <button type="button" class="btn text-primary w-100 py-3">聯繫</button>
+              <button type="button" class="btn text-secondary w-100 py-3" data-toggle="modal" data-target="#reserveModal">預約</button>
+            </div>
           </div>
         </li>
       </ul>

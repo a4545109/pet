@@ -1,0 +1,54 @@
+.reserveItem{
+  width: 128px;
+  height: 128px;
+  cursor: pointer;
+  @include mobile(){
+    width: 72px;
+    height: 72px;
+  }
+  box-shadow: 0px 3px 6px #00000029;
+  border: 3px solid transparent;
+  color: #888888;
+  .material-icons{
+    font-size: 43px;
+    margin-bottom: 10px;
+    @include mobile(){
+      font-size: 20px;
+      margin-bottom: 3px;
+    }
+  }
+  &:hover{
+    border: 3px solid #D5411A;
+  }
+  &:hover .material-icons{
+    color: #F0AD25;
+  }
+  &:hover p{
+    color: #772400;
+  }
+}
+.reserveSelect{
+  margin-bottom: 56px;
+  @include pad(){
+    margin-bottom: 76px;
+  }
+  @include mobile(){
+    margin-bottom: 40px;
+  }
+  .selectItem:nth-child(1){
+    width: 14.5%;
+  }
+  .selectItem:nth-child(2){
+    width: 21%;
+  }
+  .selectItem:nth-child(3){
+    width: 22.5%;
+  }
+  @include mobile(){
+    .selectItem:nth-child(1),
+    .selectItem:nth-child(2),
+    .selectItem:nth-child(3){
+      width: 20%;
+    }
+  }
+}

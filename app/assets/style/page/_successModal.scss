@@ -1,0 +1,23 @@
+.successModal{
+  .modal-content{
+    padding: 164px 0;
+    @include pad(){
+      padding: 293px 0;
+    }
+    @include mobile(){
+      padding: 209px 0;
+    }
+  }
+  .material-icons{
+    font-size: 80px;
+  }
+  .successBtn{
+    width: 350px;
+    @include pad{
+      width: 330px;
+    }
+    @include mobile(){
+      width: 294px;
+    }
+  }
+}

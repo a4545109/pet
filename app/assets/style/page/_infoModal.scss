@@ -1,0 +1,12 @@
+.infoModal,
+.paymentModal{
+  .form-control{
+    width: 320px;
+    @include pad(){
+      width: 330px;
+    }
+    @include mobile(){
+      width: 297px;
+    }
+  }
+}

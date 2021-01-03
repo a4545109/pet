@@ -1,0 +1,9 @@
+.payFormGroup{
+  margin-bottom: 128px;
+  @include pad(){
+    margin-bottom: 150px;
+  }
+  @include mobile(){
+    margin-bottom: 92px;
+  }
+}
