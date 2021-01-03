@@ -10759,8 +10759,10 @@ a:hover {
   font-size: 48px; }
 
 @media screen and (max-width: 992px) {
-  .fs-lg-fs-l {
+  .fs-lg-l {
     font-size: 20px; }
+  .fs-lg-xl {
+    font-size: 24px; }
   .fs-lg-2xl {
     font-size: 32px; } }
 
@@ -11081,8 +11083,64 @@ a:hover {
   display: block;
   padding: 9px 16px; }
 
+.loginImg {
+  width: 530px;
+  height: 736px; }
+
 .loginContent {
   max-width: 635px; }
+  .loginContent .loginTitle {
+    padding-top: 112px; }
+    @media screen and (max-width: 992px) {
+      .loginContent .loginTitle {
+        padding-top: 176px; } }
+    @media screen and (max-width: 768px) {
+      .loginContent .loginTitle {
+        padding-top: 60px; } }
+  .loginContent .loginBtn {
+    border: 1px solid #CED4DA; }
+
+.signIn {
+  width: 40%; }
+  @media screen and (max-width: 992px) {
+    .signIn {
+      width: 100%; } }
+
+.register {
+  margin-bottom: 80px; }
+  @media screen and (max-width: 992px) {
+    .register {
+      margin-bottom: 180px; } }
+  @media screen and (max-width: 768px) {
+    .register {
+      margin-bottom: 122px; } }
+
+.profile {
+  padding-top: 153px; }
+  @media screen and (max-width: 992px) {
+    .profile {
+      padding-top: 265px; } }
+  @media screen and (max-width: 768px) {
+    .profile {
+      padding-top: 60px; } }
+  .profile table th,
+  .profile table td {
+    padding: 0 30px 20px 0; }
+    @media screen and (max-width: 992px) {
+      .profile table th,
+      .profile table td {
+        padding: 0 55px 20px 0; } }
+    @media screen and (max-width: 768px) {
+      .profile table th,
+      .profile table td {
+        padding: 0 25px 20px 0; } }
+  .profile .profileImg {
+    width: 95px; }
+  .profile .profileBtn {
+    width: 255px; }
+    @media screen and (max-width: 992px) {
+      .profile .profileBtn {
+        width: 100%; } }
 
 .reserveItem {
   width: 128px;
