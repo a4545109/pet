@@ -38,8 +38,11 @@ $fs-4xl: 48px;
   font-size: $fs-4xl;
 }
 @include pad(){
-  .fs-lg-fs-l{
+  .fs-lg-l{
     font-size: $fs-l;
+  }
+  .fs-lg-xl{
+    font-size: $fs-xl;
   }
   .fs-lg-2xl{
     font-size: $fs-2xl;

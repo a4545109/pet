@@ -11,35 +11,37 @@ current: login
     </div>
     <div class="col-12 col-md-8 col-lg-7">
       <div class="loginContent w-100">
-        <h2>登入</h2>
+        <h2 class="loginTitle fs-2xl lh-12 text-primary mb-6 mb-md-10">登入</h2>
         <div class="form-group">
-          <label for="email">電子信箱</label><br>
+          <label class="mb-2" for="email">電子信箱</label><br>
           <input type="email" class="form-control" id="email" placeholder="example@gmail.com">
         </div>
-        <div class="form-group">
-          <label for="password">密碼</label><br>
-          <input type="password" class="form-control" id="password" placeholder="請輸入密碼">
-          <span>忘記密碼</span>
+        <div class="form-group mb-4">
+          <label class="mb-2" for="password">密碼</label><br>
+          <input type="password" class="form-control mb-1" id="password" placeholder="請輸入密碼">
+          <span class="fs-s lh-5">忘記密碼</span>
         </div>
-        <input type="checkbox"><span>記住我的帳號</span>
+        <div class="mb-7">
+          <input type="checkbox"><span>記住我的帳號</span>
+        </div>
         <div class="row">
-          <div class="col-12 col-md-6">
-            <button type="button" class="w-100">
-              <div class="d-flex align-items-center">
+          <div class="col-12 col-lg-6">
+            <button type="button" class="loginBtn btn w-100 mb-3">
+              <div class="d-flex align-items-center justify-content-center">
                 <img src="./assets/images/facebook.svg" alt="">Facebook
               </div>
             </button>
           </div>
-          <div class="col-12 col-md-6">
-            <button type="button" class="w-100">
-              <div class="d-flex align-items-center">
+          <div class="col-12 col-lg-6">
+            <button type="button" class="loginBtn btn w-100 mb-10">
+              <div class="d-flex align-items-center justify-content-center">
                 <img src="./assets/images/google.svg" alt="">Google
               </div>
             </button>
           </div>
         </div>
-        <button type="button"><a href="profile.html">登入</a></button>
-        <p>還沒註冊嗎？</p>
+        <button type="button" class="signIn btn btn-secondary mb-2"><a href="profile.html" class="text-white d-block">登入</a></button>
+        <p class="register text-secondary">還沒註冊嗎？</p>
       </div>
     </div>
   </div>

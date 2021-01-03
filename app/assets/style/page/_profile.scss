@@ -1,0 +1,28 @@
+.profile{
+  padding-top: 153px;
+  @include pad(){
+    padding-top: 265px;
+  }
+  @include mobile(){
+    padding-top: 60px;
+  }
+  table th,
+  table td{
+    padding: 0 30px 20px 0;
+    @include pad(){
+      padding: 0 55px 20px 0;
+    }
+    @include mobile(){
+      padding: 0 25px 20px 0;
+    }
+  }
+  .profileImg{
+    width: 95px;
+  }
+  .profileBtn{
+    width: 255px;
+    @include pad(){
+      width: 100%;
+    }
+  }
+}
