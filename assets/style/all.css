@@ -10974,7 +10974,8 @@ a:hover {
       margin-bottom: 4px; } }
 
 .demand .demandItem {
-  height: 350px; }
+  height: 350px;
+  position: relative; }
   @media screen and (max-width: 992px) {
     .demand .demandItem {
       height: 210px; } }
@@ -10990,6 +10991,16 @@ a:hover {
   @media screen and (max-width: 768px) {
     .demand .demandItemItem {
       height: 132px; } }
+
+.coverColor {
+  -webkit-filter: brightness(0.6);
+          filter: brightness(0.6); }
+  .coverColor:hover {
+    -webkit-filter: brightness(0.8);
+            filter: brightness(0.8); }
+
+.serviceItem {
+  position: absolute; }
 
 .wall {
   background-image: url("../../assets/images/index-9.jpeg");
