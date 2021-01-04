@@ -1,3 +1,16 @@
+var swiper = new Swiper('.swiper-container', {
+  slidesPerView: 3,
+  autoplay:true, 
+  speed: 2000,
+  loop:true, //可以讓圖片迴圈輪播
+  autoplayDisableOnInteraction:false, //在點選之後可以繼續實現輪播
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});
+
+
 AOS.init({
   // Global settings:
   disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
